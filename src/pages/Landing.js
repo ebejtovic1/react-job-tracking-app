@@ -1,0 +1,29 @@
+import main from '../assets/images/main.svg';
+import Wrapper from '../assets/wrappers/LandingPage';
+import { Logo } from '../components';
+import { Link } from 'react-router-dom';
+const Landing = () => {
+  return (
+    <Wrapper>
+      <nav>
+      </nav>
+      <div className='container page'>
+        {/* info */}
+        <div className='info'>
+          <h1>
+            job <span>tracking</span> app
+          </h1>
+          <p>
+            The Job Tracking App is a powerful and user-friendly web application designed to streamline and enhance the job management process. It allows professionals to efficiently track and manage their process from anywhere. Stay organized, collaborate seamlessly, and gain valuable insights into your work with the Job Tracking App.
+          </p>
+          <Link to='/register' className='btn btn-hero'>
+            Login/Register
+          </Link>
+        </div>
+        <img src={main} alt='job hunt' className='img main-img' />
+      </div>
+    </Wrapper>
+  );
+};
+
+export default Landing;
